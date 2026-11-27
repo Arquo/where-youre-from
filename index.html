@@ -80,6 +80,15 @@ header{display:grid; gap:14px}
 .soon .art b{font-family:var(--f-display); font-size:26px; color:var(--line)}
 .soon p{margin:0}
 
+.support{
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px 24px;
+  padding:22px 24px; border-radius:16px; background:var(--surface); border:1px solid var(--line);
+}
+.support h2{margin:0 0 4px; font-family:var(--f-display); font-weight:700; font-size:20px; letter-spacing:-.01em}
+.support p{margin:0; color:var(--muted); max-width:46ch}
+.support .play{text-decoration:none}
+.support small{display:block; margin-top:6px; font-size:13px; color:var(--muted)}
+
 footer{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:14px; color:var(--muted); border-top:1px solid var(--line); padding-top:18px}
 
 @media (max-width:640px){
@@ -137,6 +146,15 @@ footer{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; fon
       <span class="art" aria-hidden="true"><b>?</b></span>
       <p>The next game is in the works.</p>
     </div>
+  </section>
+
+  <section class="support" aria-labelledby="support-h">
+    <div>
+      <h2 id="support-h">Support ayoshi</h2>
+      <p>The games are free. If you enjoyed one, a small donation helps keep new ones coming.</p>
+      <small>Card, Apple Pay or Google Pay. Checkout is handled by Stripe.</small>
+    </div>
+    <a class="play" href="https://buy.stripe.com/7sYdR25Yq60Q8VL0cw4ko00" target="_blank" rel="noopener">Donate →</a>
   </section>
 
   <footer>
